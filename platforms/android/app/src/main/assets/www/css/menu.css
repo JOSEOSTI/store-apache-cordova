@@ -1,0 +1,89 @@
+@import 'https://fonts.googleapis.com/css?family=Lato';
+body {
+  background-color: #fff;
+}
+
+#icon-menu{
+  position: absolute;
+  cursor: pointer;
+  left: 1em;
+  top: 1em;
+  z-index: 40;
+  width: 30px;
+  height: 30px;
+  background: url("https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-32.png") no-repeat 0px -2px transparent;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.8);
+  box-sizing: border-box;
+  position: absolute;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    left: -18em;
+  top: 0;
+  height: 100%;
+  padding-right: 0.2em;
+  padding-top: 2em;
+  z-index: 20;
+  transition: all 0.3s ease;
+}
+
+nav.mostrar {
+  left: 0;
+}
+
+.menu {
+  list-style: none;
+  line-height: 42px;
+  margin: 2em auto;
+  /*outline: 1px solid red*/
+  padding-left: 0;
+  width: 15em;
+}
+.menu li {
+  box-shadow: 3px 0 rgba(2, 2, 2, 0.8) inset;
+  padding-left: 1em;
+  margin-bottom: 5px;
+  transition: all 0.5s;
+  /*outline: 1px solid green*/
+}
+nav ul li a {
+	display: block;
+	padding: 10px 15px;
+	color: #fff;
+	text-decoration: none;
+	-webkit-transition: 0.2s linear;
+	-moz-transition: 0.2s linear;
+	-ms-transition: 0.2s linear;
+	-o-transition: 0.2s linear;
+	transition: 0.2s linear;
+}
+nav ul li a .fa {
+	width: 16px;
+	text-align: center;
+	margin-right: 5px;
+	float:right;
+}
+nav ul li ul li a {
+	
+	border-left: 4px solid transparent;
+	padding: 10px 20px;
+}
+
+.menu a {
+  color: rgb(0, 0, 0);
+  font-family: "Lato", sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: block;
+  transition: all 0.5s;
+  font-size: 15px;
+  
+}
+.menu a:hover {
+  margin-left: 1em;
+  transition: all 0.3s;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
